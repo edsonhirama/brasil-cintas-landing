@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido Confirmado! 🎉 | Brasil Cintas</title>
+  <meta name="description" content="Obrigado por sua compra! Sua encomenda do Short Cinta Modelador da Brasil Cintas foi confirmada com sucesso.">
+  
+  <!-- Favicon SVG Corporativo -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23111827'/%3E%3Cstop offset='100%25' stop-color='%23090D16'/%3E%3C/linearGradient%3E%3ClinearGradient id='gem' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2334D399'/%3E%3Cstop offset='100%25' stop-color='%2325D366'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23bg)'/%3E%3Crect x='2' y='2' width='60' height='60' rx='14' fill='none' stroke='%2325D366' stroke-width='2' stroke-opacity='0.4'/%3E%3Cpath d='M19 16 C 25 24, 27 30, 27 32 C 27 34, 25 40, 19 48' fill='none' stroke='url(%23gem)' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M45 16 C 39 24, 37 30, 37 32 C 37 34, 39 40, 45 48' fill='none' stroke='url(%23gem)' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M32 17 L36 27 L46 32 L36 37 L32 47 L28 37 L18 32 L28 27 Z' fill='%23ffffff'/%3E%3Ccircle cx='32' cy='32' r='3' fill='%2325D366'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              green: '#25D366',
+              greenHover: '#20bd5a',
+              dark: '#111827',
+            }
+          },
+          boxShadow: {
+            'glow-green': '0 0 25px -3px rgba(37, 211, 102, 0.4)',
+            'card-smooth': '0 20px 45px -15px rgba(0, 0, 0, 0.07)',
+          },
+          keyframes: {
+            scaleCheck: {
+              '0%': { transform: 'scale(0)', opacity: '0' },
+              '60%': { transform: 'scale(1.15)', opacity: '1' },
+              '100%': { transform: 'scale(1)', opacity: '1' },
+            }
+          },
+          animation: {
+            'scale-check': 'scaleCheck 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen flex flex-col justify-between antialiased selection:bg-[#25D366] selection:text-white">
+
+  <!-- ==========================================
+       HEADER SIMPLES (MARCA BRASIL CINTAS)
+  =========================================== -->
+  <header class="bg-white border-b border-gray-100 py-4 sm:py-5 shadow-sm">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 group" aria-label="Ir para a página inicial da Brasil Cintas">
+        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-gray-900 to-gray-700 flex items-center justify-center text-white font-extrabold shadow-sm group-hover:scale-105 transition">
+          <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-lg sm:text-xl font-black tracking-tight text-gray-900">
+            Brasil <span class="text-[#25D366]">Cintas</span>
+          </span>
+          <span class="text-[9px] tracking-widest uppercase font-semibold text-gray-400 -mt-1">
+            brasilcintas.shop
+          </span>
+        </div>
+      </a>
+
+      <!-- Selo de Pedido Seguro -->
+      <div class="flex items-center gap-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">
+        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+        </svg>
+        <span>Pedido Registrado</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       CONTEÚDO PRINCIPAL (CARD DE OBRIGADO)
+  =========================================== -->
+  <main class="flex-grow flex items-center justify-center py-10 sm:py-16 px-4 sm:px-6">
+    <div class="max-w-2xl w-full">
+      
+      <!-- Card Centralizado -->
+      <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-card-smooth border border-gray-100 text-center">
+        
+        <!-- Ícone Animado de Sucesso (Checkmark) -->
+        <div class="mx-auto w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-emerald-100 text-[#25D366] flex items-center justify-center shadow-glow-green mb-6 animate-scale-check">
+          <svg class="w-10 h-10 sm:w-12 sm:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+
+        <!-- Título H1 -->
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-3">
+          Pedido Confirmado com Sucesso! 🎉
+        </h1>
+
+        <!-- Subtítulo Explicativo -->
+        <p class="text-base sm:text-lg text-gray-600 max-w-lg mx-auto mb-8 leading-relaxed">
+          Obrigado pela sua preferência. A sua encomenda do <strong class="text-gray-900">Short Cinta Modelador</strong> foi registada com sucesso em nosso sistema.
+        </p>
+
+        <!-- Caixa de Instruções / Próximos Passos (COD) -->
+        <div class="text-left bg-gray-50 rounded-2xl p-5 sm:p-7 border border-gray-200/80 mb-8 space-y-4">
+          <div class="flex items-center gap-2 pb-3 border-b border-gray-200">
+            <span class="text-lg">📋</span>
+            <h2 class="text-sm sm:text-base font-bold text-gray-900 uppercase tracking-wide">
+              Próximos Passos da Sua Entrega:
+            </h2>
+          </div>
+
+          <!-- Passo 1 -->
+          <div class="flex items-start gap-3.5">
+            <div class="w-8 h-8 rounded-xl bg-white border border-gray-200 text-base flex items-center justify-center shrink-0 shadow-sm">
+              📦
+            </div>
+            <div>
+              <h3 class="text-sm sm:text-base font-bold text-gray-900 mb-0.5">
+                Separando o seu pedido
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                Nossa equipe logística já está a preparar o seu kit com todo o carinho e segurança para envio imediato.
+              </p>
+            </div>
+          </div>
+
+          <!-- Passo 2 -->
+          <div class="flex items-start gap-3.5">
+            <div class="w-8 h-8 rounded-xl bg-white border border-gray-200 text-base flex items-center justify-center shrink-0 shadow-sm">
+              🚚
+            </div>
+            <div>
+              <h3 class="text-sm sm:text-base font-bold text-gray-900 mb-0.5">
+                Entrega Rápida & Pagamento na Entrega
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                O estafeta fará a entrega no endereço informado. <strong class="text-emerald-700 font-semibold">Lembre-se que o pagamento (em dinheiro ou cartão) só é feito no ato da receção!</strong>
+              </p>
+            </div>
+          </div>
+
+          <!-- Passo 3 -->
+          <div class="flex items-start gap-3.5">
+            <div class="w-8 h-8 rounded-xl bg-white border border-gray-200 text-base flex items-center justify-center shrink-0 shadow-sm">
+              📱
+            </div>
+            <div>
+              <h3 class="text-sm sm:text-base font-bold text-gray-900 mb-0.5">
+                Fique atento ao WhatsApp
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                Caso seja necessário confirmar algum detalhe do endereço ou o agendamento de chegada, nossa equipe poderá entrar em contato.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botões de Ação e Suporte -->
+        <div class="space-y-3 sm:space-y-4">
+          <!-- Botão WhatsApp Suporte -->
+          <a href="https://wa.me/5511921720001?text=Ol%C3%A1%2C%20acabei%20de%20fazer%20o%20meu%20pedido%20do%20Short%20Cinta%20e%20gostaria%20de%20acompanhar" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="w-full inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white font-extrabold text-base sm:text-lg py-4 px-6 rounded-2xl shadow-glow-green hover:shadow-lg transition-all duration-300 transform active:scale-95"
+             role="button"
+             aria-label="Falar com Suporte no WhatsApp">
+            <svg class="w-6 h-6 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.073.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.155.57 4.178 1.564 5.927l-1.657 6.059 6.223-1.632c1.7 0.932 3.652 1.464 5.733 1.464 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/>
+            </svg>
+            <span>Falar com Suporte no WhatsApp</span>
+          </a>
+
+          <!-- Botão Voltar para a Loja -->
+          <a href="index.html" 
+             class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-2xl border border-gray-300 text-gray-700 hover:bg-gray-100 hover:text-gray-900 font-semibold text-sm transition"
+             role="button">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            <span>Voltar para a Página Inicial</span>
+          </a>
+        </div>
+
+        <!-- Garantias de Segurança -->
+        <div class="mt-8 pt-6 border-t border-gray-100 flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs text-gray-500 font-medium">
+          <span class="inline-flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z" clip-rule="evenodd"/>
+            </svg>
+            Privacidade 100% Protegida
+          </span>
+          <span class="inline-flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            Garantia de 7 Dias Incondicional
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==========================================
+       RODAPÉ MINIMALISTA
+  =========================================== -->
+  <footer class="bg-white border-t border-gray-100 py-6 text-center text-xs text-gray-500">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 space-y-1">
+      <p class="font-medium text-gray-600">
+        © 2026 Brasil Cintas. Todos os direitos reservados.
+      </p>
+      <p class="text-[11px] text-gray-400">
+        brasilcintas.shop • Moda Íntima & Modeladores Femininos
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
