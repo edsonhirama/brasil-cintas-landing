@@ -110,7 +110,8 @@
               class="w-full h-full object-cover"
               src="assets/short-cinta-reduz-medidas-na-hora.mp4" 
               poster="assets/video-poster.webp"
-              preload="none"
+              preload="metadata"
+              autoplay
               loop 
               muted 
               playsinline
@@ -814,7 +815,7 @@
         <!-- Botão Suporte Direto WhatsApp -->
         <div class="text-center pt-2 pb-6">
           <p class="text-sm text-gray-400 mb-4">Ainda ficou com alguma dúvida sobre seu tamanho ou envio?</p>
-          <a href="https://wa.me/?text=Ol%C3%A1%2C%20tenho%20d%C3%BAvidas%20sobre%20o%20Short%20Cinta%20da%20Brasil%20Cintas" 
+          <a href="https://wa.me/5511921720001?text=Ol%C3%A1%2C%20tenho%20d%C3%BAvidas%20sobre%20o%20Short%20Cinta%20da%20Brasil%20Cintas" 
              target="_blank" 
              rel="noopener noreferrer"
              class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl border-2 border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-white transition duration-300 font-bold text-base shadow-sm hover:shadow-glow-green"
@@ -861,19 +862,19 @@
         </div>
       </div>
 
-      <!-- Links de Compliance e Políticas -->
+      <!-- Links de Compliance e Políticas (Google Ads Compliant) -->
       <div class="flex flex-wrap items-center justify-center gap-6 py-6 text-gray-400">
-        <button type="button" onclick="openPolicyModal('privacidade')" class="hover:text-white transition underline-offset-4 hover:underline">
+        <a href="privacidade.html" class="hover:text-white transition underline-offset-4 hover:underline">
           Políticas de Privacidade
-        </button>
+        </a>
         <span>•</span>
-        <button type="button" onclick="openPolicyModal('termos')" class="hover:text-white transition underline-offset-4 hover:underline">
+        <a href="termos.html" class="hover:text-white transition underline-offset-4 hover:underline">
           Termos de Uso
-        </button>
+        </a>
         <span>•</span>
-        <button type="button" onclick="openPolicyModal('trocas')" class="hover:text-white transition underline-offset-4 hover:underline">
+        <a href="trocas.html" class="hover:text-white transition underline-offset-4 hover:underline">
           Trocas e Devoluções
-        </button>
+        </a>
       </div>
 
       <!-- Copyright e Aviso Legal Exato do Prompt -->
@@ -921,31 +922,7 @@
     </div>
   </div>
 
-  <!-- ==========================================
-       MODAL DE POLÍTICAS E COMPLIANCE
-  =========================================== -->
-  <div id="policy-modal" class="fixed inset-0 z-50 bg-black/80 hidden items-center justify-center p-4" onclick="closePolicyModal()">
-    <div class="bg-white text-gray-800 rounded-3xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative" onclick="event.stopPropagation()">
-      <button 
-        type="button" 
-        onclick="closePolicyModal()" 
-        class="absolute top-5 right-5 text-gray-400 hover:text-gray-700 text-2xl font-bold focus:outline-none"
-        aria-label="Fechar modal">
-        ✕
-      </button>
-      <h3 id="policy-title" class="text-2xl font-black text-gray-900 mb-4 pb-2 border-b border-gray-100">
-        Políticas da Loja
-      </h3>
-      <div id="policy-body" class="text-sm text-gray-600 space-y-4 leading-relaxed">
-        <!-- Conteúdo inserido dinamicamente via JS -->
-      </div>
-      <div class="mt-8 text-right">
-        <button type="button" onclick="closePolicyModal()" class="px-5 py-2.5 bg-gray-900 text-white text-xs font-bold rounded-xl hover:bg-gray-800 transition">
-          Entendi e Fechar
-        </button>
-      </div>
-    </div>
-  </div>
+
 
   <!-- ==========================================
        SCRIPTS JAVASCRIPT LEVES
@@ -1025,52 +1002,7 @@
       modal.classList.remove('flex');
     }
 
-    // 5. Textos e Modais de Compliance
-    const policies = {
-      privacidade: {
-        title: "Política de Privacidade",
-        content: `
-          <p>A <strong>Brasil Cintas</strong> valoriza a privacidade dos seus clientes. Nós coletamos apenas as informações estritamente necessárias para a realização da entrega e emissão da comprovação de pedido.</p>
-          <p>Seus dados pessoais (como nome, endereço de entrega e telefone) são tratados em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) e jamais serão vendidos ou compartilhados com terceiros não autorizados.</p>
-          <p>Utilizamos cookies técnicos essenciais apenas para medição de tráfego, garantia de segurança na sessão do usuário e navegação contínua no site.</p>
-        `
-      },
-      termos: {
-        title: "Termos de Uso",
-        content: `
-          <p>Ao navegar e realizar uma solicitação de encomenda no site <strong>brasilcintas.shop</strong>, você concorda com as condições de atendimento e entrega estabelecidas.</p>
-          <p>A modalidade de <strong>Pagamento na Entrega</strong> exige que o cliente forneça um endereço completo e com destinatário presente no dia da entrega para conferência e pagamento ao entregador ou parceiro logístico conveniado.</p>
-          <p>Os prazos de entrega informados são estimativas e podem variar conforme a região de atendimento expressa ou pelos serviços postais dos Correios.</p>
-        `
-      },
-      trocas: {
-        title: "Trocas e Devoluções",
-        content: `
-          <p><strong>O prazo para trocas e devoluções é de 7 dias após a receção do produto</strong>, conforme assegurado pelo Artigo 49 do Código de Defesa do Consumidor.</p>
-          <p>Caso o produto apresente qualquer defeito de fabricação ou o tamanho escolhido não se ajuste adequadamente, o cliente tem direito à troca sem custos adicionais de envio dentro do prazo legal.</p>
-          <p>Para acionar a garantia ou solicitar troca de tamanho, basta entrar em contato com nossa equipe de suporte através do WhatsApp oficial informado no rodapé da página.</p>
-        `
-      }
-    };
 
-    function openPolicyModal(type) {
-      const modal = document.getElementById('policy-modal');
-      const title = document.getElementById('policy-title');
-      const body = document.getElementById('policy-body');
-      
-      if (policies[type]) {
-        title.innerHTML = policies[type].title;
-        body.innerHTML = policies[type].content;
-        modal.classList.remove('hidden');
-        modal.classList.add('flex');
-      }
-    }
-
-    function closePolicyModal() {
-      const modal = document.getElementById('policy-modal');
-      modal.classList.add('hidden');
-      modal.classList.remove('flex');
-    }
 
     // Inicialização ao carregar o DOM
     document.addEventListener('DOMContentLoaded', function () {
@@ -1099,7 +1031,6 @@
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') {
         closeImageModal();
-        closePolicyModal();
       }
     });
   </script>
