@@ -10,6 +10,9 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="alternate icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23111827'/%3E%3Cstop offset='100%25' stop-color='%23090D16'/%3E%3C/linearGradient%3E%3ClinearGradient id='gem' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2334D399'/%3E%3Cstop offset='100%25' stop-color='%2325D366'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23bg)'/%3E%3Crect x='2' y='2' width='60' height='60' rx='14' fill='none' stroke='%2325D366' stroke-width='2' stroke-opacity='0.4'/%3E%3Cpath d='M19 16 C 25 24, 27 30, 27 32 C 27 34, 25 40, 19 48' fill='none' stroke='url(%23gem)' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M45 16 C 39 24, 37 30, 37 32 C 37 34, 39 40, 45 48' fill='none' stroke='url(%23gem)' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M32 17 L36 27 L46 32 L36 37 L32 47 L28 37 L18 32 L28 27 Z' fill='%23ffffff'/%3E%3Ccircle cx='32' cy='32' r='3' fill='%2325D366'/%3E%3C/svg%3E">
 
+  <!-- Preload da Imagem Poster do Vídeo Hero (LCP Otimizado) -->
+  <link rel="preload" as="image" href="assets/video-poster.webp" type="image/webp">
+
   <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -171,6 +174,7 @@
             <video 
               class="w-full h-full object-cover"
               src="assets/short-cinta-reduz-medidas-na-hora.mp4" 
+              poster="assets/video-poster.webp"
               autoplay 
               loop 
               muted 
@@ -331,10 +335,11 @@
               
               <div class="relative bg-white p-3 rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
                 <img 
-                  src="assets/SaveClip.App_481073193_989587103365827_958560532061879314_n.jpg" 
+                  src="assets/detalhes-produto.webp" 
                   alt="Detalhamento funcional do Short Cinta Modelador com 4 barbatanas anatômicas e sustentação" 
                   class="w-full h-auto rounded-2xl object-cover hover:scale-[1.02] transition duration-500"
-                  loading="lazy">
+                  loading="lazy"
+                  decoding="async">
                 
                 <div class="p-4 text-center">
                   <span class="inline-flex items-center gap-1.5 text-xs font-bold text-gray-800 uppercase tracking-wider">
@@ -377,10 +382,11 @@
             <div class="bg-gray-50 p-3 sm:p-4 rounded-3xl border border-gray-200 shadow-lg relative group">
               <div class="overflow-hidden rounded-2xl">
                 <img 
-                  src="assets/Antes_Depois_Quadrado_2.png" 
+                  src="assets/Antes_Depois_Quadrado_2.webp" 
                   alt="Antes e depois mostrando a redução imediata de medidas com o Short Cinta Modelador" 
                   class="w-full h-auto object-cover group-hover:scale-105 transition duration-500"
-                  loading="lazy">
+                  loading="lazy"
+                  decoding="async">
               </div>
               <div class="mt-4 pb-2">
                 <span class="inline-block bg-brand-dark text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
@@ -413,11 +419,12 @@
             <div class="bg-gray-50 p-2 sm:p-3 rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
               <div class="overflow-hidden rounded-xl bg-white aspect-[9/16] sm:aspect-auto">
                 <img 
-                  src="assets/print1.jpg" 
+                  src="assets/print1.webp" 
                   alt="Depoimento real no WhatsApp sobre a eficácia do Short Cinta" 
                   class="w-full h-auto object-contain hover:scale-105 transition duration-300 cursor-pointer"
                   onclick="openImageModal(this.src, 'Depoimento WhatsApp 1')"
-                  loading="lazy">
+                  loading="lazy"
+                  decoding="async">
               </div>
               <div class="p-3 text-center">
                 <div class="flex items-center justify-center gap-1 text-amber-400 mb-1">
@@ -431,11 +438,12 @@
             <div class="bg-gray-50 p-2 sm:p-3 rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
               <div class="overflow-hidden rounded-xl bg-white aspect-[9/16] sm:aspect-auto">
                 <img 
-                  src="assets/print2.jpg" 
+                  src="assets/print2.webp" 
                   alt="Feedback de cliente satisfeita com o conforto do Short Cinta" 
                   class="w-full h-auto object-contain hover:scale-105 transition duration-300 cursor-pointer"
                   onclick="openImageModal(this.src, 'Depoimento WhatsApp 2')"
-                  loading="lazy">
+                  loading="lazy"
+                  decoding="async">
               </div>
               <div class="p-3 text-center">
                 <div class="flex items-center justify-center gap-1 text-amber-400 mb-1">
@@ -449,11 +457,12 @@
             <div class="bg-gray-50 p-2 sm:p-3 rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
               <div class="overflow-hidden rounded-xl bg-white aspect-[9/16] sm:aspect-auto">
                 <img 
-                  src="assets/print3.jpg" 
+                  src="assets/print3.webp" 
                   alt="Relato de cliente que pagou na entrega e amou o resultado" 
                   class="w-full h-auto object-contain hover:scale-105 transition duration-300 cursor-pointer"
                   onclick="openImageModal(this.src, 'Depoimento WhatsApp 3')"
-                  loading="lazy">
+                  loading="lazy"
+                  decoding="async">
               </div>
               <div class="p-3 text-center">
                 <div class="flex items-center justify-center gap-1 text-amber-400 mb-1">
@@ -481,11 +490,12 @@
 
           <div class="bg-white p-3 sm:p-4 rounded-2xl shadow-sm border border-gray-200 mb-6 max-w-lg mx-auto overflow-hidden">
             <img 
-              src="assets/4.jpg" 
+              src="assets/tabela-medidas.webp" 
               alt="Tabela de Medidas do Short Cinta Modelador para tamanhos P/M e G/GG" 
               class="w-full h-auto object-contain rounded-xl hover:scale-105 transition duration-300 cursor-pointer"
               onclick="openImageModal(this.src, 'Tabela de Medidas')"
-              loading="lazy">
+              loading="lazy"
+              decoding="async">
           </div>
 
           <!-- Instruções Adicionais de Tamanho -->
