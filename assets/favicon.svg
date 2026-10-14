@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#090D16"/>
+    </linearGradient>
+    <linearGradient id="emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#25D366"/>
+    </linearGradient>
+  </defs>
+  <!-- Fundo Corporativo Arredondado -->
+  <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#25D366" stroke-width="2" stroke-opacity="0.4"/>
+  <!-- Curvas Anatômicas de Cintura / Modelador -->
+  <path d="M19 16 C 25 24, 27 30, 27 32 C 27 34, 25 40, 19 48" fill="none" stroke="url(#emerald)" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M45 16 C 39 24, 37 30, 37 32 C 37 34, 39 40, 45 48" fill="none" stroke="url(#emerald)" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Diamante Central Reluzente -->
+  <path d="M32 17 L36 27 L46 32 L36 37 L32 47 L28 37 L18 32 L28 27 Z" fill="#ffffff"/>
+  <circle cx="32" cy="32" r="3" fill="#25D366"/>
+</svg>
