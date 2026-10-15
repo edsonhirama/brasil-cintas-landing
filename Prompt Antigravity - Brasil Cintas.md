@@ -28,9 +28,9 @@ Utilize a sua capacidade de orquestração de skills do catálogo `agentic-aweso
   * Prova Social WhatsApp 2: `print2.jpg`  
   * Prova Social WhatsApp 3: `print3.jpg`  
   * Links de Checkout (Logzz):  
-    1. Oferta 1 Unidade: `https://cart.logzz.com.br/pay/1-unidade-short-cinta`  
-    2. Oferta 2 Unidades (Leve 2): `https://cart.logzz.com.br/pay/leve-2-short-cinta`  
-    3. Oferta 3 Unidades: `https://cart.logzz.com.br/pay/3-unidades-short-cinta`
+    1. Oferta 1 Unidade: `https://entrega.logzz.com.br/pay/memq4ed3r/juxtz-01-short-cinta`  
+    2. Oferta 2 Unidades (Leve 2): `https://entrega.logzz.com.br/pay/memq4ed3r/02-cinta-oficial`  
+    3. Oferta 3 Unidades: `https://entrega.logzz.com.br/pay/memq4ed3r/03-short-cinta`
 
 ---
 
@@ -61,7 +61,7 @@ Utilize a sua capacidade de orquestração de skills do catálogo `agentic-aweso
 * **Headline (H1):** "Esqueça as cintas que a sufocam e enrolam o dia todo." (Centralizada, negrito, destaque visual).  
 * **Subheadline:** "Descubra o Short Cinta que reduz até 3 medidas instantaneamente, com máximo conforto. Encomende hoje com envio grátis e pague apenas quando a encomenda chegar às suas mãos\!"  
 * **Mídia Hero:** Tag `<video>` referenciando `short-cinta-reduz-medidas-na-hora.mp4` com reprodução automática contínua e sem som, aplicando cantos arredondados e sombra contínua.  
-* **CTA Principal:** Botão em tom verde de alta conversão (`bg-[#25D366]`) com micro-animação de atenção. Texto: "Quero Encomendar e Pagar na Entrega". Link apontando para o checkout de oferta oficial Logzz (`https://cart.logzz.com.br/pay/leve-2-short-cinta`).
+* **CTA Principal:** Botão em tom verde de alta conversão (`bg-[#25D366]`) com micro-animação de atenção. Texto: "Quero Encomendar e Pagar na Entrega". Link apontando para o checkout de oferta oficial Logzz (`https://entrega.logzz.com.br/pay/memq4ed3r/02-cinta-oficial`).
 
 ## **\#\# Bloco 2: Conexão e Benefícios (Split Layout)**
 
@@ -90,9 +90,9 @@ Utilize a sua capacidade de orquestração de skills do catálogo `agentic-aweso
 * **Título (H2):** "Promoção Relâmpago".  
 * **Subtítulo:** "Estoque Limitado\! Frete Grátis para regiões abrangidas."  
 * **Estrutura de Preços (3 Cards com Alinhamento Vertical):**  
-  * *Card 1 (Entrada):* "1 Unidade" | "Para experimentar" | Preço: "R\$ 129,90" | CTA em tom escuro apontando para `https://cart.logzz.com.br/pay/1-unidade-short-cinta`: "Pedir 1 Unidade".  
-  * *Card 2 (Destaque Central):* Borda destacada em verde (`border-[#25D366]`), escala aumentada (`scale-105`), selo flutuante "MAIS VENDIDO". Título: "Compre 1, Leve 2" | "Menos de R\$ 80 cada\!" | Preço: "R\$ 159,90" | Nota: "Até 12x no cartão. Você só paga na entrega\!" | CTA em verde animado (`pulse`) apontando para `https://cart.logzz.com.br/pay/leve-2-short-cinta`: "Quero a Promoção".  
-  * *Card 3 (Kit Máximo):* "Leve 3 Unidades" | "Máxima economia" | Preço: "R\$ 209,90" | CTA em tom escuro apontando para `https://cart.logzz.com.br/pay/3-unidades-short-cinta`: "Pedir 3 Unidades".
+  * *Card 1 (Entrada):* "1 Unidade" | "Para experimentar" | Preço: "R\$ 129,90" | CTA em tom escuro apontando para `https://entrega.logzz.com.br/pay/memq4ed3r/juxtz-01-short-cinta`: "Pedir 1 Unidade".  
+  * *Card 2 (Destaque Central):* Borda destacada em verde (`border-[#25D366]`), escala aumentada (`scale-105`), selo flutuante "MAIS VENDIDO". Título: "Compre 1, Leve 2" | "Menos de R\$ 80 cada\!" | Preço: "R\$ 159,90" | Nota: "Até 12x no cartão. Você só paga na entrega\!" | CTA em verde animado (`pulse`) apontando para `https://entrega.logzz.com.br/pay/memq4ed3r/02-cinta-oficial`: "Quero a Promoção".  
+  * *Card 3 (Kit Máximo):* "Leve 3 Unidades" | "Máxima economia" | Preço: "R\$ 209,90" | CTA em tom escuro apontando para `https://entrega.logzz.com.br/pay/memq4ed3r/03-short-cinta`: "Pedir 3 Unidades".
 
 ## **\#\# Bloco 5: Perguntas Frequentes (FAQ) e Rodapé**
 
